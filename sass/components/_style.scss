@@ -4,6 +4,7 @@ header {
     z-index: 100;
     width: 100%;  
     background-color: #FFF;
+    height: 117px;
 }
 .header-container {
     display: flex;
@@ -32,6 +33,7 @@ header {
     &__link {
         font-size: 16px;
         font-weight: 400;
+        letter-spacing: 0.01em;
         color: $color1;
         text-decoration: none;
         text-transform: uppercase;
@@ -105,6 +107,7 @@ header {
     &__link {
         padding: 5px 20px 5px;
         display: block;
+        letter-spacing: 0.01em;
         color: rgb(157,190,223);
         text-decoration: none;
         &:hover {
@@ -392,5 +395,110 @@ footer {
     }
     &__tel {
         margin-left: -7px;
+    }
+}
+//how to by
+.h-b-sec {
+    padding: 170px 0 60px;
+    text-align: center;
+    &__h2 {
+        margin: 0 0 45px 8.33333333%;
+        color: $color2;
+        text-align: left;
+    }
+    &__btn {
+        padding: 20px 30px;
+    }
+}
+.h-b-sec-box {
+    margin-bottom: 65px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    &__icon {
+        margin-bottom: 20px;
+        font-size: 85px;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $color2;
+    }
+    &__text {
+        padding-right: 55px;
+        font-size: 20px;
+        line-height: 1.1;
+        color: $color2;
+    }
+}
+
+//contacts
+.map {
+    padding-top: 117px;
+    height: 617px;
+    width: 100%;
+}
+//sale
+.s-sec1 {
+    padding-top: 165px;
+    &__h3 {
+        margin-bottom: 30px;
+    }
+}
+.s-sec1-box {
+    height: 260px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+    &__decore {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+    &__price {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 20px 0;
+        width: 100%;
+        background-color: #9dbedf;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #fff;
+        opacity: 1;
+        transition: opacity 0.8s;
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 23px 0;
+        width: 180px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    &:hover .s-sec1-box__btn{
+        opacity: 1;     
+    }
+    &:hover .s-sec1-box__price{
+        opacity: 0;     
+    }
+    &:hover .s-sec1-box__decore{
+        opacity: 0.6;     
     }
 }
