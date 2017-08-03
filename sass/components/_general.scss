@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Proba';
+    src: url(../../../fonts/Proba-Pro-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proba';
+    src: url(../../../fonts/Proba-Pro-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Proba', sans-serif;
+}
+$color1: #ce8f5a;
+$color2: #616976;
+.main-wrapper {
+    width: 100%;
+    overflox-x: hidden;
+}
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: $color1;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+h2 {
+    font-size: 38px;
+    letter-spacing: 0.01em;
+    line-height: 1.3;
+}

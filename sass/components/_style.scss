@@ -1,0 +1,396 @@
+//header
+header {
+    position: fixed;    
+    z-index: 100;
+    width: 100%;  
+    background-color: #FFF;
+}
+.header-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 0 35px;
+    max-width: 1180px;
+}
+.header-logo {
+    margin: 0 30% 0 60px;
+    font-size: 32px;
+    font-weight: 700;
+    color: $color2;
+    text-decoration: none;
+}
+.header-menu {
+    margin: 12px 60px 0 0;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        list-style-type: none;
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        color: $color1;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+.header-submenu-conteiner {
+    position: relative;
+    padding-right: 20px;
+    transition-duration: 0.3s;
+    &__item {
+        position: absolute;
+        width: 12px;
+        height: 8px;
+        top: 7px;
+        left: calc(100% + -9px);
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 10px;
+            background-color: $color1;
+            transform: rotate(45deg);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 6px;
+            height: 2px;
+            width: 10px;
+            background-color: $color1;
+            transform: rotate(-45deg);
+        }
+    }
+    &:hover .header-submenu {
+        height: 150px;
+    }
+}
+.cart {
+    position: relative;
+    margin-top: 4px;
+    text-decoration: none;
+    &__icon {
+        font-size: 26px;
+    }
+    &__count {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+    }
+}
+
+.header-submenu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    text-align: left;
+    padding-top: 20px;
+    width: calc( 100% + 50px);
+    margin-left: -20px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.6s, padding 0.6s;
+    &__link {
+        padding: 5px 20px 5px;
+        display: block;
+        color: rgb(157,190,223);
+        text-decoration: none;
+        &:hover {
+            background-color: rgb(157,190,223);
+            color: #fff;
+        }
+    }
+}
+//home
+.h-sec1 {
+    padding-top: 117px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    &__box {
+        position: absolute;
+        padding-bottom: 62px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    &__h1 {
+        margin-bottom: 58px;
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.01em;
+    }
+    &__btn {
+        padding: 22px;
+        font-size: 18px;
+    }
+}
+.h-sec2 {
+    margin-top: 20px;
+}
+.h-sec2-box {
+    position: relative;
+    text-align: center;
+    &__img {
+        max-width: 100%;
+    }
+    &__item {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-bottom: 34px;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.01em;
+    }
+    &__btn {
+        padding: 14px 45px;
+    }
+}
+.h-sec3 {
+    margin: 70px 0 0;
+    text-align: center;
+    &__h2 {
+        margin-bottom: 50px;
+        color: $color2;
+        text-align: left;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color1;
+        border-bottom: 1px dashed currentColor;
+    }
+}
+.h-sec3-box {
+    &__container {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    display: block;
+    width: 49%;
+    margin-bottom: 20px;
+    height: 320px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    &:nth-child(3n) {
+        width: 100%;
+    }
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    &__title {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: $color2;
+        text-transform: uppercase;
+    }
+}
+.h-sec3-advantage {
+    &__container {
+        margin: 100px 0 60px;
+    }
+    text-align: left;
+    margin-bottom: 50px;
+    &__icon {
+        margin-bottom: 20px;
+        font-size: 85px;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: $color2;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+.h-sec4 {
+    position: relative;
+    padding: 60px 0 65px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../../img/sec4-bg.jpg);
+    &__decore {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#a2c1e0, .95);
+    }
+    &__h2 {
+        margin-bottom: 30px;
+        color: #fff;       
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 1.25;
+        color: #fff;
+    }
+}
+.h-sec4-form {
+    display: flex;
+    &__input {
+        margin-right: 20px;
+        width: 50%;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #fff;
+        border: none;
+        border-bottom: 2px solid #fff;
+        outline: none;
+        background-color: transparent;
+    }
+    &__btn {
+        padding: 20px 30px;
+        border: none;
+        outline: none;
+    }
+}
+.h-sec4-form__input::-webkit-input-placeholder {
+    color: rgba(#fff, .5);
+    text-transform: uppercase;
+}
+.h-sec4-form__input::-moz-placeholder          {
+    color: rgba(#fff, .5);
+    text-transform: uppercase;
+}
+.h-sec4-form__input:-moz-placeholder           {
+    color: rgba(#fff, .5);
+    text-transform: uppercase;
+}
+.h-sec4-form__input:-ms-input-placeholder      {
+    color: rgba(#fff, .5);
+    text-transform: uppercase;
+}
+.h-sec5 {
+    padding: 80px 0 100px;
+    &__h2 {
+        margin-bottom: 20px;
+        color: $color2;
+    }
+    &__subtitle {
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: $color2;
+    }
+    &__text {
+        width: 49%;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $color2;
+    }
+}
+.h-sec5-box {
+    display: flex;
+    justify-content: space-between;
+}
+.h-sec5-form {
+    width: 300px;
+    max-width: 100%;
+    &__input {
+        margin-bottom: 5px;
+        width: 100%;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: $color2;
+        border: none;
+        border-bottom: 2px solid $color1;
+        outline: none;
+        background-color: transparent;
+    }
+    &__btn {
+        margin-top: 30px;
+        width: 100%;
+        height: 55px;
+        border: none;
+        outline: none;
+    }
+}
+.h-sec5-form__input::-webkit-input-placeholder {
+    color: rgba($color2, .5);
+    text-transform: uppercase;
+}
+.h-sec5-form__input::-moz-placeholder          {
+    color: rgba($color2, .5);
+    text-transform: uppercase;
+}
+.h-sec5-form__input:-moz-placeholder           {
+    color: rgba($color2, .5);
+    text-transform: uppercase;
+}
+.h-sec5-form__input:-ms-input-placeholder      {
+    color: rgba($color2, .5);
+    text-transform: uppercase;
+}
+//footer
+footer {
+    padding: 35px 0 75px;
+    background-color: #ebf2f9;
+}
+.footer-copy {
+   font-size: 16px;
+   letter-spacing: 0.01em; 
+   color: $color2;
+}
+.footer-menu {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color2;
+    letter-spacing: 0.01em;
+    &__item {
+        margin-top: 10px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        line-height: 1.25;
+    }
+    &__link {
+        color: $color2;
+        text-decoration: none;
+    }
+    &__tel {
+        margin-left: -7px;
+    }
+}
