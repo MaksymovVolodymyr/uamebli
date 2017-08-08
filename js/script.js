@@ -11,4 +11,13 @@
  		$('.toggle-grid__big-box').addClass('toggle-grid--active-box');
  	});
 
+ 	$('.cat-filter__decore').click(function() {
+ 		$(this).toggleClass('cat-filter__decore--rotate');
+ 		$(this).toggleClass('cat-filter__decore--reset');
+ 		var tab = $(this).parents('.cat-filter__box');
+ 		var tabItem = tab.find('.cat-filter__item');
+ 		tabItem.toggle('slow');
+ 	});
+
+ 	
 });	 	

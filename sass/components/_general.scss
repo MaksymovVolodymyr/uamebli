@@ -33,6 +33,22 @@ $color2: #616976;
     text-decoration: none;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: #d8a57b;
+    }
+    &:active {
+        background-color: #a66935;
+    }
+}
+.link {
+    transition-duration: 0.3s;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        color: #A66935;
+    }
 }
 h2 {
     font-size: 38px;
@@ -78,5 +94,24 @@ h3 {
     }
     &--active-box {
         background-color: $color1;
+    }
+}
+//item
+.t-sec1 {
+    margin-top: 160px;
+    &__h3 {
+        margin-bottom: 25px;
+        color: $color2;
+    }
+    &__price-box {
+        margin-bottom: 35px;
+    }
+    &__new-price {
+        margin-right: 20px;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: $color1;
     }
 }
