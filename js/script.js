@@ -19,7 +19,11 @@
  		$tabItem.toggle('slow');
  	});
 
+
  	$('.t-tab').click(function() {
+        var $tabDecore = $(this).find('.t-tab__decore');
+        $tabDecore.toggleClass('t-tab__decore--rotate');
+        $tabDecore.toggleClass('t-tab__decore--reset');
  		var $tabItem = $(this).find('.t-tab__text');
  		$tabItem.toggle('slow');
  	});
@@ -56,5 +60,8 @@
         $('.header-menu-open').fadeIn('fast'); 
     });   
  	
+    $('.filter-mob__title').click(function() {
+    	$('.filter-mob-wrapper').toggle('slow');
+    });
  	
 });	 	
