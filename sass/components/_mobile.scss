@@ -1,0 +1,149 @@
+@media (max-width: 1200px) {
+	.header-logo {
+		margin-right: 15%;
+	}
+}
+@media (max-width: 992px) {
+	header {
+		position: absolute;
+		height: auto;
+		background-color: transperent;
+	}
+	.header-menu-open__decore--white {
+		background-color: #fff;
+		&:before {
+			background-color: #fff;
+		}
+		&:after {
+			background-color: #fff;
+		}
+	}
+	.header-logo--white {
+		color: #fff;
+	}
+	.header-container {
+		position: absolute;
+		padding: 0;
+		width: 100%;
+	}
+	.header-menu-open {
+		display: block;
+	}
+	.header-logo {
+		margin: 20px 0 0 10px;
+	}
+	.header-menu {
+		display: none;
+	}
+	.cart {
+		position: absolute;
+		top: 16px;
+		right: 60px;
+	}
+	.h-sec1 {
+		padding: 0;	
+	}
+	.h-sec1__h1 {
+		font-size: 	30px;
+	}
+	.h-sec1__btn {
+		font-size: 22px;
+	}
+	.h-sec2 {
+		display: none;
+	}
+	h2 {
+		font-size: 26px;
+		text-align: center;
+	}
+	.h-sec3__h2 {
+		margin: 40px 0 25px;
+		text-align: center;
+	}
+	.h-sec3-box {
+		width: 100%;	
+	}
+	.h-sec3-box__title {
+		font-size: 18px;
+	}
+	.h-sec3__link {
+		font-size: 22px;
+	}
+	.h-sec3-advantage__container {
+		margin-top: 35px;
+	}
+	.h-sec3-advantage__title {
+		font-size: 22px;
+	}
+	.h-sec3-advantage__text {
+		font-size: 20px;	
+	}
+	.h-sec4 {
+		padding: 35px 0 40px;
+	}
+	.h-sec4__text {
+		display: none;
+	}
+	.h-sec4-form {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.h-sec4-form__input {
+		margin-bottom: 20px;
+		width: 100%;	
+	}
+	.h-sec5 {
+		padding: 60px 0;
+	}
+    .h-sec5__subtitle {
+        display: none;
+    }
+    .h-sec5-box {
+    	flex-wrap: wrap;
+    }
+    .h-sec5__text {
+    	margin-bottom: 40px;
+    	order: 1;
+    	width: 100%;
+    	font-size: 20px;
+    }
+    .h-sec5-form {
+    	width: 100%;	
+    	order: 2;
+    }
+    .h-sec5__h2 {
+    	margin-bottom: 30px;
+    }
+    .footer-desktop {
+    	display: none;
+    }
+    footer {
+    	background-color: #9dbedf;
+    	padding: 40px 0 5px;
+    }
+    .footer-mobile {	
+    	display: flex;
+    	flex-wrap: wrap;
+    }
+    .footer-mobile-box {
+    	margin-bottom: 45px;
+    	width: 50%;	
+    	color: #fff;
+    	&__title {
+    		margin-bottom: 25px;	
+    		font-size: 22px;
+    		font-weight: 700;
+    		letter-spacing: 0.01em;
+    	}
+    	&__item {
+    		display: block;
+    		color: #fff;
+    		margin-bottom: 15px;
+    		font-size: 16px;
+    		text-decoration: none;
+    		&-is {
+    			color: $color2;
+    		}
+    	}
+    }
+}
