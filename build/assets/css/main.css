@@ -866,7 +866,8 @@ html {
   font-family: 'Proba', sans-serif; }
 
 input {
-  border-radius: 0px; }
+  border-radius: 0px;
+  -webkit-appearance: none; }
 
 .main-wrapper {
   width: 100%;
@@ -2309,6 +2310,8 @@ footer {
   .t-tab__decore {
     top: 20px; }
   .sale-sidebar {
-    display: none; } }
+    display: none; }
+  .cart__count {
+    top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
