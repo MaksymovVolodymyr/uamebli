@@ -16,24 +16,13 @@
 	header {
 		position: absolute;
 		height: auto;
-		background-color: transperent;
-	}
-	.header-menu-open__decore--white {
-		background-color: #fff;
-		&:before {
-			background-color: #fff;
-		}
-		&:after {
-			background-color: #fff;
-		}
-	}
-	.header-logo--white {
-		color: #fff;
 	}
 	.header-container {
+        height: 75px;
 		position: absolute;
 		padding: 0;
 		width: 100%;
+        background-color: #FFF;
 	}
 	.header-menu-open {
 		display: block;
@@ -127,7 +116,6 @@
     	display: none;
     }
     footer {
-    	background-color: #9dbedf;
     	padding: 40px 0 5px;
     }
     .footer-mobile {	
@@ -137,7 +125,7 @@
     .footer-mobile-box {
     	margin-bottom: 45px;
     	width: 50%;	
-    	color: #fff;
+    	color: $color2;
     	&__title {
     		margin-bottom: 25px;	
     		font-size: 22px;
@@ -146,7 +134,7 @@
     	}
     	&__item {
     		display: block;
-    		color: #fff;
+    		color: $color2;
     		margin-bottom: 15px;
     		font-size: 16px;
     		text-decoration: none;
@@ -183,11 +171,9 @@
     .filter-mob-wrapper {
     	display: none;
     	padding-bottom: 30px;
-    	top: 60px;
+    	margin-top: 30px;
     	width: 100%;
-    	position: absolute;
     	background-color: #FFF;
-    	z-index: 100;
     	&:before {
     		content: '';
     		position: absolute;
@@ -320,5 +306,15 @@
     }
     .t-main-slider--mob {
     	display: block;
+    }
+    .t-tab__title {
+        height: 45px;
+        padding-top: 14px;
+    }
+    .t-tab__decore {
+        top: 20px;
+    }
+    .sale-sidebar {
+        display: none;
     }
 }

@@ -11,9 +11,9 @@
 		<header>
 			<div class="header-container">
 				<div class="header-menu-open">
-					<div class="header-menu-open__decore header-menu-open__decore--white"></div>
+					<div class="header-menu-open__decore"></div>
 				</div>
-				<a href="https://maksymovvolodymyr.github.io/uamebli/home.html" class="header-logo header-logo--white">UAmebli</a>
+				<a href="https://maksymovvolodymyr.github.io/uamebli/home.html" class="header-logo">UAmebli</a>
 				<ul class="header-menu">
 					<li class="header-menu__item"><div class="header-menu__link header-submenu-conteiner">Каталог товаров
 						<div class="header-submenu-conteiner__item"></div>
@@ -53,7 +53,6 @@
 		</header>
 
 		<div class="sidebar">
-			<a href="" class="sidebar__logo">UAmebli</a>
 			<ul class="sidebar-menu">Каталог
 				<li class="sidebar-menu__item"><a href="https://maksymovvolodymyr.github.io/uamebli/category.html" class="sidebar-menu__link">Диваны</a></li>
 				<li class="sidebar-menu__item"><a href="https://maksymovvolodymyr.github.io/uamebli/category.html" class="sidebar-menu__link">Кровати</a></li>
@@ -82,7 +81,7 @@
 							<img src="img/sec2-1.jpg" alt="" class="h-sec2-box__img">
 							<div class="h-sec2-box__item">
 								<p class="h-sec2-box__title">Бесплатная доставка от 5000 грн</p>
-								<a href="https://maksymovvolodymyr.github.io/uamebli/sale.html" class="btn h-sec2-box__btn">подробнее</a>
+								<a href="https://maksymovvolodymyr.github.io/uamebli/howToBy.html" class="btn h-sec2-box__btn">подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -122,7 +121,7 @@
 								<p class="h-sec3-box__title">кухни</p>
 							</a>
 						</div>
-						<a href="" class="h-sec3__link link">показать все разделы</a>
+						<!-- <a href="" class="h-sec3__link link">показать все разделы</a> -->
 						<div class="h-sec3-advantage__container">
 							<div class="row">
 							<div class="col-md-6">
@@ -203,7 +202,7 @@
 						<div class="h-sec5-box">
 							<form action="" class="h-sec5-form">
 								<input type="text" class="h-sec5-form__input" placeholder="имя">
-								<input type="text" class="h-sec5-form__input" placeholder="e-mail">
+								<input type="text" class="h-sec5-form__input" placeholder="e-mail или телефон">
 								<input type="submit" class="h-sec5-form__btn btn" value="ЗАКАЗАТЬ">
 							</form>
 							<div class="h-sec5__text">
@@ -267,10 +266,13 @@
 						</ul>
 					</div>
 					<div class="col-md-2">
-						<ul class="footer-menu">Магазины в Киеве
-							<li class="footer-menu__item">Харьковское шоссе 1</li>
-							<li class="footer-menu__item">Электротехническая 4Б, магазин «3К» </li>
-						</ul>
+						<div class="footer-is__wrapper">
+							<ul class="footer-menu">Магазины в Киеве
+								<li class="footer-menu__item">Харьковское шоссе 1</li>
+								<li class="footer-menu__item">Электротехническая 4Б, магазин «3К» </li>
+							</ul>
+							<a href="http://it-is.agency/" class="footer-is">IS Agency</a>
+						</div>
 					</div>
 				</div>
 			</div>	
@@ -302,5 +304,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
 <script src='js/slick.min.js'></script>
 <script src="js/script.js"></script>  	
+<script>
+	$(window).scroll(function() {
+        var $tag = $('.h-sec3');
+        var $off = $tag.offset();
+        var $dist = $off.top;
+        var $windowDist = $(window).scrollTop();
+        if ($windowDist >= $dist - 200) {
+            $('.sidebar').show('slow');
+        } else {
+            $('.sidebar').hide('slow');
+        }
+        
+    })
+</script>
 </body>
 </html>

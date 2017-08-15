@@ -95,7 +95,7 @@ header {
 				left: 50%;
 				transform: translateX(-50%);
 				font-size: 16px;
-				font-weight: 700;
+				font-weight: 400;
 				color: #fff;
 		}
 }
@@ -180,7 +180,7 @@ header {
 		&__close {
 				position: absolute;
 				top: 25px;
-				right: 30px;    
+				right: 10px;    
 				width: 25px;  
 				height: 25px; 
 				cursor: pointer;
@@ -229,21 +229,6 @@ header {
 		top: 150px;
 		left: calc(50vw - 605px);
 		z-index: 100;
-		&__logo {
-				display: inline-block;
-				margin-bottom: 65px;
-				font-size: 32px;
-				font-weight: 700;
-				color: $color2;
-				text-decoration: none;
-				transition-duration: 0.3s;
-				&:hover {
-						opacity: 0.8;
-				}
-				&:active {
-						color: #3F4A5C;
-				}
-		}
 }
 .sidebar-menu {
 		margin-bottom: 45px;
@@ -327,7 +312,7 @@ header {
 				text-transform: uppercase;
 				text-decoration: none;
 				color: $color1;
-				border-bottom: 1px dashed currentColor;
+				border-bottom: 2px dotted currentColor;
 		}
 }
 .h-sec3-box {
@@ -515,6 +500,18 @@ footer {
 		padding: 35px 0 75px;
 		background-color: #ebf2f9;
 }
+.footer-is {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 16px;
+	color: $color2;
+	text-decoration: none;
+	&__wrapper {
+		height: 100%;
+		position: relative;
+	}
+}
 .footer-copy {
 	 font-size: 16px;
 	 letter-spacing: 0.01em; 
@@ -584,6 +581,9 @@ footer {
 		width: 100%;
 }
 //sale
+.sale-sidebar {
+	margin-top: 70px;
+}
 .s-sec1 {
 		padding-top: 165px;
 		&__h3 {
@@ -659,14 +659,6 @@ footer {
 				color: $color2;
 				text-align: left;
 		}
-		&__link {
-				font-size: 16px;
-				letter-spacing: 0.01em;
-				color: $color1;
-				text-decoration: none;
-				text-transform: uppercase;
-				border-bottom: 2px dashed currentColor;
-		}
 }
 .product-box {
 		&__container {
@@ -734,6 +726,10 @@ footer {
 		&__title {
 				margin: 20px auto 5px;
 				text-transform: uppercase;
+				text-align: center;
+		}
+		&__subtitle {
+			text-align: center;
 		}
 		&__price {
 				display: flex;
@@ -767,13 +763,6 @@ footer {
 				border: none;
 				outline: none;
 		}
-}
-.cat-show {
-		font-size: 16px;
-		font-weight: 700;
-		letter-spacing: 0.02em;
-		color: #9DBEDF;
-		text-align: left;
 }
 .s-sec2__h2 {
 		margin-bottom: 15px;
@@ -1138,6 +1127,31 @@ footer {
 				width: 2px;
 				background-color: $color1;
 				transform: rotate(45deg);
+			}
+		}
+		.slick-prev {
+			top: calc(50% - 17px);
+			height: 34px;
+			width: 18px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -3px;
+				right: 8px;
+				height: 25px;
+				width: 2px;
+				background-color: $color1;
+				transform: rotate(45deg);
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				right: 8px;
+				height: 25px;
+				width: 2px;
+				background-color: $color1;
+				transform: rotate(-45deg);
 			}
 		}
 		&__title {
