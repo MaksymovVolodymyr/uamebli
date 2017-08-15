@@ -77,5 +77,10 @@
             window.location.hash = target;
         });
     }); 
+
+    $('.t-sec1__color').click(function() {
+        $('.t-sec1__color').removeClass('t-sec1__color--active');
+        $(this).addClass('t-sec1__color--active');
+    });
  	
 });	 	

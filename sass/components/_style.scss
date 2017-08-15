@@ -115,11 +115,11 @@ header {
 				padding: 5px 20px 5px;
 				display: block;
 				letter-spacing: 0.01em;
-				color: rgb(157,190,223);
+				color: #ce8f5a;
 				text-decoration: none;
 				&:hover {
-						background-color: rgb(157,190,223);
-						color: #fff;
+						background-color: rgba($color1, 0.2);
+						color: #a66935;
 				}
 		}
 }
@@ -241,6 +241,13 @@ header {
 				color: $color1;
 				text-transform: uppercase;
 				text-decoration: none;
+				transition-duration: 0.3s;
+				&:hover {
+					color: rgba($color1, 0.8);
+				}
+				&:active {
+					color: #a66935;
+				}
 		}
 }
 //home
@@ -547,9 +554,6 @@ footer {
 				margin: 0 0 45px 8.33333333%;
 				color: $color2;
 				text-align: left;
-		}
-		&__btn {
-				padding: 20px 30px;
 		}
 }
 .h-b-sec-box {
@@ -939,6 +943,15 @@ footer {
 				margin-right: 20px;
 				display: inline-block;
 				letter-spacing: 0.02em;
+		}
+		&__color {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			cursor: pointer;
+			&--active {
+				border-radius: 0;
+			}
 		}
 }
 .t-pay {
