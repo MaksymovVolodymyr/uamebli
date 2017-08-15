@@ -1,9 +1,18 @@
+@media (max-width: 1280px) {
+	.sidebar {
+		left: calc(50vw - 485px);
+	}
+}
 @media (max-width: 1200px) {
 	.header-logo {
 		margin-right: 15%;
 	}
 }
-@media (max-width: 992px) {
+@media (max-width: 992px) {	
+	.sidebar {
+		height: 0;
+		overflow: hidden;
+	}
 	header {
 		position: absolute;
 		height: auto;

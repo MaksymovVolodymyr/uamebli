@@ -63,5 +63,20 @@
     $('.filter-mob__title').click(function() {
     	$('.filter-mob-wrapper').toggle('slow');
     });
+
+    //sidebar
+
+    $(window).scroll(function() {
+        var $tag = $('.h-sec3');
+        var $off = $tag.offset();
+        var $dist = $off.top;
+        var $windowDist = $(window).scrollTop();
+        if ($windowDist >= $dist - 200) {
+            $('.sidebar').show('slow');
+        } else {
+            $('.sidebar').hide('slow');
+        }
+        
+    })
  	
 });	 	

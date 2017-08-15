@@ -1179,6 +1179,7 @@ header {
 .sidebar {
   display: none;
   position: fixed;
+  top: 150px;
   left: calc(50vw - 605px);
   z-index: 100; }
   .sidebar__logo {
@@ -2039,11 +2040,18 @@ footer {
     letter-spacing: 0.02em;
     color: #616976; }
 
+@media (max-width: 1280px) {
+  .sidebar {
+    left: calc(50vw - 485px); } }
+
 @media (max-width: 1200px) {
   .header-logo {
     margin-right: 15%; } }
 
 @media (max-width: 992px) {
+  .sidebar {
+    height: 0;
+    overflow: hidden; }
   header {
     position: absolute;
     height: auto;
