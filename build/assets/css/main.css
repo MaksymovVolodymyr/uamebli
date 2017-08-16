@@ -963,6 +963,37 @@ h3 {
     letter-spacing: 0.01em;
     color: #ce8f5a; }
 
+html {
+  overflow: auto; }
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 100000000000; }
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 8px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ce8f5a;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: #ce8f5a; }
+
 header {
   position: fixed;
   z-index: 100;
