@@ -16,7 +16,7 @@
  		$(this).toggleClass('cat-filter__decore--reset');
  		var $tab = $(this).parents('.cat-filter__box');
  		var $tabItem = $tab.find('.cat-filter__item');
- 		$tabItem.toggle('slow');
+ 		$tabItem.slideToggle('slow');
  	});
 
 
@@ -25,7 +25,7 @@
         $tabDecore.toggleClass('t-tab__decore--rotate');
         $tabDecore.toggleClass('t-tab__decore--reset');
  		var $tabItem = $(this).find('.t-tab__text');
- 		$tabItem.toggle('slow');
+ 		$tabItem.slideToggle('slow');
  	});
 
  	$('.t-main-slider').slick({
@@ -61,7 +61,7 @@
     });   
  	
     $('.filter-mob__title').click(function() {
-    	$('.filter-mob-wrapper').toggle('slow');
+    	$('.filter-mob-wrapper').slideToggle('slow');
     });  
 
     //scroll 
