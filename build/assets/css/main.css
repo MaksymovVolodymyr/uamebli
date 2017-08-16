@@ -963,6 +963,9 @@ h3 {
     letter-spacing: 0.01em;
     color: #ce8f5a; }
 
+.select__wrapper {
+  display: inline-block; }
+
 header {
   position: fixed;
   z-index: 100;
@@ -1680,6 +1683,7 @@ footer {
   display: none; }
 
 .cat-sort {
+  display: inline-block;
   margin: 125px 0 40px;
   font-size: 16px;
   font-weight: 700;
@@ -2585,7 +2589,8 @@ footer {
     font-size: 14px;
     letter-spacing: 0; }
   .b-sec-form__input {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
   .b-mon-radio {
     display: block; }
   .b-sec4-form1 {

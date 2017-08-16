@@ -756,17 +756,18 @@ footer {
 	display: none;
 }
 .cat-sort {
-		margin: 125px 0 40px;
-		font-size: 16px;
-		font-weight: 700;
-		letter-spacing: 0.02em;
-		color: $color2;
-		&__select {
-				font-weight: 400;
-				color: $color1;
-				border: none;
-				outline: none;
-		}
+	display: inline-block;
+	margin: 125px 0 40px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	color: $color2;
+	&__select {
+		font-weight: 400;
+		color: $color1;
+		border: none;
+		outline: none;
+	}
 }
 .s-sec2__h2 {
 		margin-bottom: 15px;
