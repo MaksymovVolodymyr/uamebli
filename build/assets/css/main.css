@@ -2035,6 +2035,11 @@ footer {
 
 .t-anotherprod {
   margin-bottom: 45px; }
+  .t-anotherprod__img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .t-anotherprod .slick-next {
     top: calc(50% - 17px);
     height: 34px;
