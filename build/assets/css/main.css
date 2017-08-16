@@ -1041,6 +1041,27 @@ input[type=radio]:checked + label:before {
   text-align: center;
   line-height: 3px; }
 
+.select-wrapper-color1,
+.select-wrapper-color2 {
+  position: relative;
+  z-index: 10; }
+  .select-wrapper-color1:after,
+  .select-wrapper-color2:after {
+    content: url(../../../img/arrow-drop-down-camel.svg);
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    width: 12px;
+    height: 6px;
+    background-color: #fff;
+    line-height: 2px; }
+
+.select-wrapper-color2:after {
+  content: url(../../../img/arrow-drop-down.svg); }
+
+.select-wrapper--do:after {
+  right: 2px; }
+
 header {
   position: fixed;
   z-index: 100;
