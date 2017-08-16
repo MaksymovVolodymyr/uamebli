@@ -2693,6 +2693,9 @@ footer {
   .b-sec1-box__numb {
     margin-top: 15px; }
   .b-sec1-box__cost {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .h-sec1__btn:hover {
+    background-color: #ce8f5a;
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
