@@ -323,4 +323,57 @@
     .cart__count {
         top: 10px;
     }
+    //cart
+    .b-sec1-box__close {
+        top: 20px;
+        transform: none;
+        width: 20px;
+        height: 20px;
+        &:before {
+            top: 9px;
+            width: 24px;
+            right: -2px;
+        }
+        &:after {
+            top: 9px;
+            width: 24px;
+            left: -1px;
+        }
+    }
+    .b-sec1-box__size {
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        margin-bottom: 15px;
+    }
+    .b-nav__item {
+        display: inline-block;
+        margin-bottom: 10px;
+        &:after {
+            top: 7px;
+        }
+        &:before {
+            top: 10px;
+        }
+    }
+    .total-cost__wrapper {
+        text-align: right;
+    }
+    .b-sec2-form3__text {
+        margin: 15px 0 0;
+    }
+    .b-sec2-form2 {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .b-sec-form__input {
+        max-width: 100%;
+    }
+    .b-mon-radio {
+        display: block;
+    }
+    .b-sec4-form1 {
+        line-height: 2.5;
+    }
 }
