@@ -2415,7 +2415,7 @@ footer {
     height: auto; }
   .header-container {
     height: 75px;
-    position: absolute;
+    position: fixed;
     padding: 0;
     width: 100%;
     background-color: #FFF; }
@@ -2693,8 +2693,6 @@ footer {
   .b-mon-radio {
     display: block; }
   .b-sec4-form1 {
-    line-height: 2.5; }
-  .prod-box__img-mob {
-    margin: 0 auto; } }
+    line-height: 2.5; } }
 
 /*# sourceMappingURL=main.css.map */
