@@ -2589,6 +2589,8 @@ footer {
   .b-mon-radio {
     display: block; }
   .b-sec4-form1 {
-    line-height: 2.5; } }
+    line-height: 2.5; }
+  .prod-box__img-mob {
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
