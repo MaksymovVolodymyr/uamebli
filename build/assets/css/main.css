@@ -2677,10 +2677,6 @@ footer {
   .b-nav__item {
     display: inline-block;
     margin-bottom: 10px; }
-    .b-nav__item:after {
-      top: 7px; }
-    .b-nav__item:before {
-      top: 10px; }
   .total-cost__wrapper {
     text-align: right; }
   .b-sec2-form3__text {

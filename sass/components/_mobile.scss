@@ -350,12 +350,6 @@
     .b-nav__item {
         display: inline-block;
         margin-bottom: 10px;
-        &:after {
-            top: 7px;
-        }
-        &:before {
-            top: 10px;
-        }
     }
     .total-cost__wrapper {
         text-align: right;
