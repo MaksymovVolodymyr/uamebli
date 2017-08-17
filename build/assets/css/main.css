@@ -1796,7 +1796,8 @@ footer {
   text-align: left; }
 
 .cat-filter {
-  margin-top: 125px; }
+  min-width: 200px;
+  margin: 125px 0 40px; }
   .cat-filter__title {
     margin-bottom: 30px;
     font-size: 16px;
@@ -1860,11 +1861,11 @@ footer {
     margin-right: 7px; }
   .cat-filter__scroll {
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
     z-index: 1; }
     .cat-filter__scroll__item {
       max-height: 180px;
-      overflow: auto; }
+      overflow-y: auto; }
   .cat-filter__pres {
     display: inline-block;
     font-size: 16px;
@@ -1975,7 +1976,9 @@ footer {
   position: relative;
   margin-bottom: 20px;
   font-size: 16px;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  -webkit-transition: all 2s;
+  transition: all 2s; }
   .t-tab__decore {
     position: absolute;
     top: 12px;
@@ -2677,6 +2680,10 @@ footer {
   .b-nav__item {
     display: inline-block;
     margin-bottom: 10px; }
+    .b-nav__item:before {
+      top: 10px; }
+    .b-nav__item:after {
+      top: 7px; }
   .total-cost__wrapper {
     text-align: right; }
   .b-sec2-form3__text {

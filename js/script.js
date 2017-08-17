@@ -22,10 +22,20 @@
 
  	$('.t-tab').click(function() {
         var $tabDecore = $(this).find('.t-tab__decore');
-        $tabDecore.toggleClass('t-tab__decore--rotate');
-        $tabDecore.toggleClass('t-tab__decore--reset');
- 		var $tabItem = $(this).find('.t-tab__text');
- 		$tabItem.slideToggle('slow');
+        var $text = $(this).find('.t-tab__text');
+
+        if ( !$(this).hasClass('t-tab--active') ) {
+
+            $('.t-tab__decore').removeClass('t-tab__decore--rotate');
+            $tabDecore.addClass('t-tab__decore--rotate');
+
+            $('.t-tab__text').slideUp('slow');
+            $text.slideDown('slow');
+
+        }
+
+        $('.t-tab').removeClass('t-tab--active');
+ 		$(this).addClass('t-tab--active');
  	});
 
  	$('.t-main-slider').slick({
