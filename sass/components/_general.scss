@@ -208,24 +208,24 @@ input[type=radio]:checked + label:before {
     text-align: center;
     line-height: 3px;
 }
-.select-wrapper-color1,
-.select-wrapper-color2 {
-    position: relative;
-    z-index: 10;
-    &:after {
-        content: url(../../../img/arrow-drop-down-camel.svg);
-        position: absolute;
-        top: 9px;
-        right: 5px;
-        width: 12px;
-        height: 6px;
-        background-color: #fff;
-        line-height: 2px;
-    }
+select {
+    -webkit-appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    -ms-aooerarance: none;
+    appearance: none!important;
+    background-color: transperent;
 }
-.select-wrapper-color2:after {
-    content: url(../../../img/arrow-drop-down.svg);
+select::-ms-expand {
+    display: none;
 }
-.select-wrapper--do:after {
-    right: 2px;
+.select--color1 {
+    background-image: url(../../../img/arrow-drop-down-camel.svg);
+}
+.select--color2 {
+    background-image: url(../../../img/arrow-drop-down.svg);
 }

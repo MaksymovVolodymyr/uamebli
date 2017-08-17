@@ -224,6 +224,7 @@ header {
 }
 //sidebar
 .sidebar {
+	width: 180px;
 		display: none;
 		position: fixed;
 		top: 150px;
@@ -762,6 +763,7 @@ footer {
 		letter-spacing: 0.02em;
 		color: $color2;
 		&__select {
+			width: 200px;
 				font-weight: 400;
 				color: $color1;
 				border: none;
@@ -858,6 +860,7 @@ footer {
 				color: $color2;
 		}
 		&__select {
+			width: 100px;
 				border: none;
 				font-size: 16px;
 				font-weight: 700;
@@ -962,6 +965,7 @@ footer {
 		line-height: 2.25;
 		color: $color2;
 		&__select {
+				width: 35px;
 				font-size: 16px;
 				font-weight: 700;
 				letter-spacing: 0.02em;

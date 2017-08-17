@@ -1041,26 +1041,26 @@ input[type=radio]:checked + label:before {
   text-align: center;
   line-height: 3px; }
 
-.select-wrapper-color1,
-.select-wrapper-color2 {
-  position: relative;
-  z-index: 10; }
-  .select-wrapper-color1:after,
-  .select-wrapper-color2:after {
-    content: url(../../../img/arrow-drop-down-camel.svg);
-    position: absolute;
-    top: 9px;
-    right: 5px;
-    width: 12px;
-    height: 6px;
-    background-color: #fff;
-    line-height: 2px; }
+select {
+  -webkit-appearance: none;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-aooerarance: none;
+  appearance: none !important;
+  background-color: transperent; }
 
-.select-wrapper-color2:after {
-  content: url(../../../img/arrow-drop-down.svg); }
+select::-ms-expand {
+  display: none; }
 
-.select-wrapper--do:after {
-  right: 2px; }
+.select--color1 {
+  background-image: url(../../../img/arrow-drop-down-camel.svg); }
+
+.select--color2 {
+  background-image: url(../../../img/arrow-drop-down.svg); }
 
 header {
   position: fixed;
@@ -1280,6 +1280,7 @@ header {
   text-decoration: none; }
 
 .sidebar {
+  width: 180px;
   display: none;
   position: fixed;
   top: 150px;
@@ -1785,6 +1786,7 @@ footer {
   letter-spacing: 0.02em;
   color: #616976; }
   .cat-sort__select {
+    width: 200px;
     font-weight: 400;
     color: #ce8f5a;
     border: none;
@@ -1873,6 +1875,7 @@ footer {
     letter-spacing: 0.02em;
     color: #616976; }
   .cat-filter__select {
+    width: 100px;
     border: none;
     font-size: 16px;
     font-weight: 700;
@@ -1958,6 +1961,7 @@ footer {
   line-height: 2.25;
   color: #616976; }
   .t-pay__select {
+    width: 35px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -2527,7 +2531,8 @@ footer {
     margin: 110px 0 20px;
     font-size: 18px; }
   .cat-sort__select {
-    font-size: 18px; }
+    font-size: 18px;
+    width: 270px; }
   .filter-mob {
     position: relative;
     display: block; }
